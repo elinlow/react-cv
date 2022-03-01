@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,27 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.icon {
+  margin-right: 15px;
+}
+
+.main-headline {
+  font-size: 16px;
 }
