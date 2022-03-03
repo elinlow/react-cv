@@ -3,14 +3,13 @@ import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 import { Icon } from './Icon';
 
 export class Education extends React.Component {
-    render(){
-
+    render() {
         return (
             <div>
                 <Icon 
                     iconType={faBookOpen}
                     text="Let us learn more about Elins Education"
-                    // handleClickEvent={this.handleClick}
+                    openContentModule={this.props.openContentModule}
                 />
             </div>
         );

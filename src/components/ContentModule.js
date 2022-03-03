@@ -4,7 +4,7 @@ import { faBookOpen } from "@fortawesome/free-solid-svg-icons";
 class ContentModule extends React.Component {
     render() {
         return (
-            <p>content</p>
+            <p>content module</p>
         )
     }
 }

@@ -2,18 +2,19 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export class Icon extends React.Component {
-    handleClick(text) {
-        alert('hej' + text);
-    }
-
     render(){
-        console.log(this.props)
         return (
             <FontAwesomeIcon 
-                icon={this.props.iconType} 
+                icon={this.props.iconType}
                 className="icon"
-                // onClick={this.props.handleClickEvent} 
-                onClick={() => this.handleClick(this.props.text)}
+                onClick={() => {
+                    if (!this.props.isContentModuleOpen) {
+                        this.props.openContentModule()
+                    } else {
+                        // Här ska close-funktionen vara
+                        this.props.isContentModuleOpen.style.display = "none"
+                    }
+                }}
             />
         );
     }

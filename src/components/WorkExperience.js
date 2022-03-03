@@ -9,6 +9,7 @@ export class WorkExperience extends React.Component {
                 <Icon 
                     iconType={faPen}
                     text="Let us learn more about Elins Work Experience"
+                    openContentModule={this.props.openContentModule}
                 />
             </div>
         );
