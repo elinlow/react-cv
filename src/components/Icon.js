@@ -12,7 +12,7 @@ export class Icon extends React.Component {
                         this.props.openContentModule()
                     } else {
                         // Här ska close-funktionen vara
-                        this.props.isContentModuleOpen.style.display = "none"
+                        
                     }
                 }}
             />
