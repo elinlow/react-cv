@@ -10,6 +10,8 @@ export class Education extends React.Component {
                     iconType={faBookOpen}
                     text="Let us learn more about Elins Education"
                     openContentModule={this.props.openContentModule}
+                    closeContentModule={this.props.closeContentModule}
+                    isContentModuleOpen={this.props.isContentModuleOpen}
                 />
             </div>
         );

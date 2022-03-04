@@ -24,6 +24,7 @@ class Home extends React.Component {
                 <Navbar 
                     openContentModule={this.openContentModule}
                     isContentModuleOpen={this.state.isContentModuleOpen}
+                    closeContentModule={this.closeContentModule}
                 />
                 {this.state.isContentModuleOpen && <ContentModule />}
             </div>

@@ -11,11 +11,13 @@ class Navbar extends React.Component {
                     <Education 
                         openContentModule={this.props.openContentModule}
                         isContentModuleOpen={this.props.isContentModuleOpen}
+                        closeContentModule={this.props.closeContentModule}
                     />
 
                     <WorkExperience 
                         openContentModule={this.props.openContentModule}
                         isContentModuleOpen={this.props.isContentModuleOpen}
+                        closeContentModule={this.props.closeContentModule}
                     />
                 </div>    
             </div>

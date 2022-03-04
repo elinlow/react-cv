@@ -10,9 +10,10 @@ export class Icon extends React.Component {
                 onClick={() => {
                     if (!this.props.isContentModuleOpen) {
                         this.props.openContentModule()
+                        console.log('open')
                     } else {
-                        // Här ska close-funktionen vara
-                        
+                        console.log('close module')
+                        this.props.closeContentModule()
                     }
                 }}
             />
