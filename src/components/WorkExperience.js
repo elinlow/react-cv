@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { Icon } from './Icon';
+import ContentModule from './ContentModule';
 
 export class WorkExperience extends React.Component {
     render(){
@@ -12,7 +13,6 @@ export class WorkExperience extends React.Component {
                     openContentModule={this.props.openContentModule}
                     closeContentModule={this.props.closeContentModule}
                     isContentModuleOpen={this.props.isContentModuleOpen}
-                    textType={this.props.contentModuleTextType}
                 />
             </div>
         );

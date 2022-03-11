@@ -11,19 +11,13 @@ class Home extends React.Component {
         };
     }
     
-    openContentModule = type => {
-        this.setState({ 
-            isContentModuleOpen: true,
-            contentModuleType: type
-        })
+    openContentModule = hej => {
+        console.log(hej)
+        // this.setState({ 
+        //     isContentModuleOpen: true,
+        //     contentModuleType: type
+        // })
     }
-
-    // openWhichContentModuleTextType = type => {
-    //     this.setState({
-    //         isContentModuleOpen: true,
-            
-    //     })
-    // }
 
     closeContentModule = () => {
         this.setState({ isContentModuleOpen: false })
@@ -38,7 +32,8 @@ class Home extends React.Component {
                     closeContentModule={this.closeContentModule}
                 />
                 {this.state.isContentModuleOpen && (
-                    <ContentModule 
+                    <ContentModule
+                        contentModuleType={this.state.contentModuleType}
                     />
                 )}
             </div>
